@@ -1,0 +1,263 @@
+.home-page {
+    min-height: 100vh;
+}
+
+/* --- NEW SECTION WRAPPER --- */
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-xl, 2rem);
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1503174971373-b1f69850bded?auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg, 1.5rem);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md, 1rem);
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-xl, 1.25rem);
+    margin-bottom: var(--spacing-xl, 2rem);
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* --- BUTTON STYLES --- */
+.hero-actions {
+    display: flex;
+    gap: var(--spacing-md, 1rem);
+    justify-content: center;
+    align-items: center; 
+}
+
+.hero-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;           
+    min-width: 180px;       
+    padding: 0 2rem;        
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: var(--radius-md, 6px);
+    text-decoration: none;
+    box-sizing: border-box; 
+    transition: all 0.3s ease;
+}
+
+.hero-actions .btn-primary {
+    background: white;
+    color: var(--primary-color, #4ade80);
+    border: 2px solid white; 
+}
+
+.hero-actions .btn-primary:hover {
+    background: var(--surface-hover, #f1f5f9);
+    border-color: var(--surface-hover, #f1f5f9);
+    transform: translateY(-2px);
+}
+
+.hero-actions .btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.hero-actions .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Added standard spacing to the featured section */
+.featured-section {
+    padding: 4rem 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl, 2rem);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-2xl, 2rem);
+    color: var(--text-primary, #333);
+    font-weight: 700;
+}
+
+.view-all-link {
+    color: var(--primary-color, #4ade80);
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s;
+}
+
+.view-all-link:hover {
+    gap: 0.8rem;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl, 2rem);
+}
+
+/* --- UPDATED CATEGORIES SECTION --- */
+.categories-section {
+    background: white;
+    padding: 3rem; 
+    /* Centers horizontal, ensures 4rem distance from top/bottom sections */
+    margin: 2rem auto 4rem auto; 
+    border-radius: var(--radius-xl, 16px);
+    box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.1));
+    width: fit-content; 
+    max-width: 90%; /* Stops it from touching edges on small screens */
+    height: auto; /* Force height to adapt only to contents */
+}
+
+.section-title {
+    font-size: var(--font-size-2xl, 2rem);
+    color: var(--text-primary, #333);
+    margin-bottom: var(--spacing-xl, 2rem);
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 120px);
+    justify-content: center;
+    gap: var(--spacing-lg, 1.5rem);
+}
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: var(--background-color, #f4f7f6);
+    border-radius: var(--radius-lg, 12px);
+    text-decoration: none;
+    color: var(--text-primary, #333);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    box-sizing: border-box; 
+}
+
+.category-card:hover {
+    background: white;
+    box-shadow: var(--shadow-lg, 0 10px 15px rgba(0,0,0,0.1));
+    transform: translateY(-5px);
+    border-color: var(--primary-color, #4ade80);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-xs, 0.5rem);
+}
+
+.category-card span {
+    font-weight: 600;
+    font-size: var(--font-size-sm, 0.875rem);
+}
+
+/* Balanced padding to match featured section */
+.how-it-works-section {
+    padding: 2rem 0 6rem 0;
+    background: transparent;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl, 2rem);
+    margin-top: var(--spacing-xl, 2rem);
+}
+
+.step-card {
+    background: white;
+    padding: var(--spacing-xl, 2rem);
+    border-radius: var(--radius-lg, 12px);
+    text-align: center;
+    box-shadow: var(--shadow-md, 0 4px 6px rgba(0,0,0,0.1));
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color, #4ade80);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-xl, 1.25rem);
+    font-weight: 700;
+    margin: 0 auto var(--spacing-md, 1rem);
+    box-shadow: var(--shadow-lg, 0 10px 15px rgba(0,0,0,0.1));
+}
+
+.step-card h3 {
+    margin-bottom: var(--spacing-sm, 0.5rem);
+    color: var(--text-primary, #333);
+}
+
+.step-card p {
+    color: var(--text-secondary, #666);
+    line-height: 1.6;
+}
+
+/* --- Mobile Responsiveness --- */
+@media screen and (max-width: 900px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 120px); 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 120px); 
+    }
+    .categories-section {
+        padding: 1.5rem; 
+    }
+}
