@@ -30,9 +30,10 @@ app.include_router(vehicles_router, prefix="/api/vehicles", tags=["Vehicles"])
 
 
 origins = [
-    "http://localhost:5173",  # Your Vite Frontend
+    "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://rentify-black.vercel.app/",
+    "https://rentify-black.vercel.app",
+    "https://rentify-ms7zdvzsh-gotti-saishahshanks-projects.vercel.app"
 ]
 
 app.add_middleware(
