@@ -1,0 +1,12 @@
+.page-container {
+  padding: var(--spacing-xl);
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+
+
+.main-content {
+  background-color: var(--background-color);
+}
